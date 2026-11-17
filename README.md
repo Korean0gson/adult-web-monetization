@@ -1,2 +1,19 @@
-# adult-web-monetization
-Webpage, App, a webpage that turns into an app. I'm just trying to make some passive income by setting up and adult webpage that has multiple offers linked to it through known sources
+# 0kbanana.com landing page
+
+This is a standalone HTML/CSS/JavaScript landing page. Open `index.html` in a browser to preview it.
+
+The homepage is an affiliate-review landing page with an IMA-ready VAST player shell. Sponsored 300x100 and 728x90 affiliate banners appear directly below the hero heading, and another 300x100 sits in a labeled ad strip at the top of the player. A separate sponsored 300x250 banner and category column appear beside the content on desktop; the sidebar stacks below the content on narrow screens. Category labels are informational and do not filter listings; age-ambiguous and violent labels are excluded. The optional CrakRevenue cam discovery widget is configured for Streamate, MFC, Xcams, and Cam4 and loads only after age confirmation and explicit consent.
+
+The footer includes an in-page sitemap and links to `privacy.html`, `terms.html`, and the public Contact Us email. These pages summarize current browser storage, optional scripts, affiliate links, and site-use conditions. The terms note that the governing-law jurisdiction has not been specified and should be reviewed before relying on them as a complete legal agreement.
+
+## Affiliate tracking
+
+The VAST shell uses Google's IMA HTML5 SDK to request ads and play a configured content video. Set `VAST_PLAYER_CONFIG.adTagUrl` and `VAST_PLAYER_CONFIG.contentVideoUrl` near the top of `script.js` to HTTPS URLs; neither source is currently configured. The IMA SDK loads only after age confirmation, explicit VAST-ad consent, and source configuration. A visitor must then select Start player to make an ad request. Until a real tag and video are supplied, ad playback—including VAST 4.4 compatibility—cannot be tested or claimed. The VAST XSD is not needed to play ads; it validates XML responses.
+
+The page separately offers the CrakRevenue cam widget, a player-confined sponsored offer overlay, and a GoLove.ai chat-head script; these are third-party affiliate experiences, disclosed on the page, and load only after age confirmation and their respective explicit consent. The chat-head script is configured to open the supplied GoLove.ai affiliate URL. The player overlay embeds the supplied offer content URL and provides its tracking URL as a separate link; it does not use the CrakRevenue pop-in loader or wait for a postitial playback event. The provided widget token and API key are included in its browser-side script URL as required by the supplied embed code; verify with CrakRevenue that they are intended for public client-side use and restrict/rotate them if supported. After approval, implement the Aggregators API and player according to the affiliate's current rules, including geoban and language restrictions. The age screen is a self-attestation prompt, not identity or legal age verification.
+
+## Privacy choices
+
+After age confirmation, a compact bottom notice links to a separate settings panel for optional traffic analytics, the cam widget, the player-sponsored offer, the GoLove.ai chat head, and VAST player ads. Optional third-party scripts remain disabled until a visitor allows each feature; none are enabled by default. Choices are saved in browser local storage, and the footer's Cookie settings button reopens the panel. Adding a third-party feature requires a new consent choice. Previous consent to the earlier pop-in is not carried over to the updated player offer or VAST ads; previous consent to the other features is retained. The sponsored banner images are fetched after age confirmation, independently of these optional choices. Revoking consent stops VAST playback and removes the IMA script element, though a page reload is needed to fully unload an SDK already evaluated by the browser. Chat-head or cam-widget UI already added by partner scripts may also require a page reload to remove completely.
+
+Cloudflare Web Analytics loads only if the visitor allows it. This preference UI is not by itself a guarantee of legal compliance; review applicable privacy rules and required disclosures before publishing.

@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="origin">
+    <meta name="theme-color" content="#11100f">
+    <meta name="description" content="Preview the planned live-player experience for 0kbanana.com. Adults 18+ only.">
+    <title>0kbanana.com — Player preview</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inert-polyfill/1.2.0/inert.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="age-gate" id="age-gate" role="dialog" aria-modal="true" aria-labelledby="gate-title" aria-describedby="gate-description">
+      <div class="gate-card">
+        <div class="wordmark gate-wordmark" aria-label="0kbanana.com">
+          <img class="brand-icon" src="banana-mark.svg" alt="" aria-hidden="true">
+          <span>0kbanana<span class="brand-dot">.</span>com</span>
+        </div>
+        <p class="eyebrow">Adults only</p>
+        <h1 id="gate-title">Before you come in<span class="accent">.</span></h1>
+        <p id="gate-description" class="gate-copy">This site is intended for adults and may promote sexually explicit entertainment. You must be at least 18 years old, or the age of majority where you live, to continue.</p>
+        <div class="gate-actions">
+          <button class="button button-primary" id="confirm-age" type="button">I’m 18 or older — enter</button>
+          <button class="button button-quiet" id="decline-age" type="button">I’m under 18 — leave</button>
+        </div>
+        <p class="gate-footnote">By continuing, you confirm that viewing adult content is legal where you are.</p>
+      </div>
+    </div>
+
+    <main id="site-content" inert>
+      <header class="site-header">
+        <a class="wordmark" href="#home" aria-label="0kbanana.com home">
+          <img class="brand-icon" src="banana-mark.svg" alt="" aria-hidden="true">
+          <span>0kbanana<span class="brand-dot">.</span>com</span>
+        </a>
+        <span class="header-note">Adults only · 18+</span>
+      </header>
+
+      <section class="hero" id="home">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Adults only · 18+</p>
+          <h1>Live entertainment, <span class="accent">your way.</span></h1>
+          <div class="hero-sponsored-ads" aria-label="Sponsored advertisements">
+            <aside class="hero-sponsored-ad">
+              <span class="hero-ad-label">Sponsored</span>
+              <a
+                href="https://t.othsk5.com/426793/6561?aff_sub5=SF_006OG000004lmDN"
+                target="_blank"
+                rel="sponsored nofollow noopener noreferrer"
+                aria-label="Visit the sponsored offer (opens in a new tab)">
+                <img
+                  class="placeholder-ad-image"
+                  data-src="https://www.imglnky.com/9248/300-100-5.jpeg"
+                  alt="Sponsored banner"
+                  width="300"
+                  height="100">
+              </a>
+            </aside>
+            <aside class="hero-sponsored-ad hero-sponsored-ad-wide">
+              <span class="hero-ad-label">Sponsored</span>
+              <a
+                href="https://t.vlmai-5.com/426793/7477?aff_sub5=SF_006OG000004lmDN"
+                target="_blank"
+                rel="sponsored nofollow noopener noreferrer"
+                aria-label="Visit the sponsored offer (opens in a new tab)">
+                <img
+                  class="placeholder-ad-image"
+                  data-src="https://www.imglnky.com/10046/GPTGirlfriend_20250320_72890-type3-personalities_1.gif"
+                  alt="GPT Girlfriend sponsored banner"
+                  width="728"
+                  height="90">
+              </a>
+            </aside>
+          </div>
+          <p class="hero-copy">A preview of the 0kbanana.com player, with an optional sponsored cam discovery feed below.</p>
+          <p class="fine-print">The player is a placeholder; the partner feed is separate and optional.</p>
+        </div>
+      </section>
+
+      <div class="content-layout">
+        <div class="content-main">
+      <section class="player-section" id="featured-player" aria-labelledby="player-title">
+        <div class="player-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> Preview only</p>
+            <h2 id="player-title">Player <span class="accent">preview.</span></h2>
+          </div>
+          <p>VAST ad playback is ready to configure.</p>
+        </div>
+        <div class="player-frame">
+          <aside class="player-ad-banner" aria-label="Advertisement">
+            <span class="player-ad-label">Advertisement</span>
+            <a
+              href="https://t.ajrkmx11.com/426793/8780/32514?file_id=598296&amp;aff_sub5=SF_006OG000004lmDN&amp;aff_sub4=AT_0002"
+              target="_blank"
+              rel="sponsored nofollow noopener noreferrer"
+              aria-label="Visit Sexi Vegas XX (opens in a new tab)">
+              <img
+                class="placeholder-ad-image"
+                data-src="https://www.imglnky.com/8780/PMKT-1157_DESIGN-16618_BannersWebinar_SexiVegasXX_300100.gif"
+                alt="Sexi Vegas XX sponsored banner"
+                width="300"
+                height="100">
+            </a>
+          </aside>
+          <div class="player-stage">
+            <div class="player-placeholder" aria-labelledby="preview-title" aria-describedby="preview-copy">
+              <div class="placeholder-art" aria-hidden="true">
+                <span class="placeholder-orb orb-one"></span>
+                <span class="placeholder-orb orb-two"></span>
+                <span class="placeholder-orb orb-three"></span>
+              </div>
+              <div class="placeholder-content">
+                <span class="placeholder-badge">VAST player shell</span>
+                <h3 id="preview-title">Configure ad and video sources</h3>
+                <p id="preview-copy">Add an HTTPS VAST ad-tag URL and content video URL in script.js. The ad SDK loads only after you allow VAST player ads.</p>
+                <button class="button button-primary player-start" id="start-vast-player" type="button" disabled>Start player</button>
+                <p class="player-status" id="vast-player-status" role="status" aria-live="polite">The player needs an ad-tag URL and video source before it can start.</p>
+              </div>
+            </div>
+            <video class="player-content-video" id="vast-content-video" controls playsinline preload="none" aria-label="Video player" hidden></video>
+            <div class="player-ad-container" id="vast-ad-container" aria-label="VAST advertisement" hidden></div>
+            <div class="player-sponsored-overlay" id="player-sponsored-overlay" hidden>
+              <div class="player-sponsored-card" role="dialog" aria-modal="true" aria-labelledby="player-ad-title">
+                <div class="player-sponsored-toolbar">
+                  <span id="player-ad-title">Sponsored offer</span>
+                  <div>
+                    <a
+                      class="player-sponsored-link"
+                      href="https://t.camsk5.com/426793/153/30618?aff_sub5=SF_006OG000004lmDN&amp;aff_sub4=AT_0016"
+                      target="_blank"
+                      rel="sponsored nofollow noopener noreferrer">Visit offer</a>
+                    <button class="player-sponsored-close" id="close-player-sponsored-ad" type="button" aria-label="Close sponsored offer">×</button>
+                  </div>
+                </div>
+                <iframe
+                  id="player-sponsored-iframe"
+                  title="Sponsored offer"
+                  referrerpolicy="origin"
+                  allow="autoplay; fullscreen"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="player-note">VAST ads require a configured HTTPS ad tag and content video. Ad playback has not been validated against a live VAST 4.4 response.</p>
+      </section>
+
+      <section class="partner-widget-section" aria-labelledby="partner-widget-title">
+        <div class="partner-widget-heading">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Sponsored affiliate feed</p>
+          <h2 id="partner-widget-title">Explore live cams<span class="accent">.</span></h2>
+          <p>This third-party widget may show adult cam listings and uses affiliate tracking. It loads only if you allow the cam feed in your privacy choices.</p>
+        </div>
+        <div class="partner-widget-frame" id="cam-widget-container" role="region" aria-live="polite" aria-label="Sponsored live cam listings">
+          <p id="cam-widget-placeholder">The partner cam feed is disabled until you choose to allow it in Cookie settings.</p>
+        </div>
+        <p class="player-note">Sponsored listings are provided by CrakRevenue, not 0kbanana.com. Clicking a listing may take you to a third-party site.</p>
+      </section>
+        </div>
+
+        <aside class="site-sidebar" aria-label="Sponsored advertisement and categories">
+          <section class="sidebar-ad" aria-label="Advertisement">
+            <p class="sidebar-section-label">Advertisement</p>
+            <a
+              href="https://t.othsk5.com/426793/10384/40300?file_id=671444&amp;aff_sub5=SF_006OG000004lmDN&amp;aff_sub4=AT_0002"
+              target="_blank"
+              rel="sponsored nofollow noopener noreferrer"
+              aria-label="Visit the sponsored offer (opens in a new tab)">
+              <img
+                src="https://www.imglnky.com/10384/20260728145953-DPR-300X250-VANNA-BARDOT-C.jpg"
+                alt="Sponsored 300 by 250 banner"
+                width="300"
+                height="250"
+                loading="lazy">
+            </a>
+          </section>
+
+          <a
+            class="button button-primary sidebar-golove-button"
+            href="https://t.vlmai-5.com/426793/10463/40700?aff_sub5=SF_006OG000004lmDN"
+            target="_blank"
+            rel="sponsored nofollow noopener noreferrer">GoLove.ai</a>
+
+          <nav class="category-sidebar" aria-labelledby="categories-title">
+            <h2 id="categories-title">Categories</h2>
+            <section class="category-group" aria-labelledby="featured-categories-title">
+              <h3 id="featured-categories-title">Featured</h3>
+              <ul class="category-list">
+                <li>Popular</li>
+                <li>Amateur</li>
+                <li>Mature</li>
+                <li>Webcam</li>
+                <li>In English</li>
+              </ul>
+            </section>
+            <section class="category-group" aria-labelledby="genres-title">
+              <h3 id="genres-title">Genres</h3>
+              <ul class="category-list">
+                <li>Behind the Scenes</li>
+                <li>Caption</li>
+                <li>Cartoon</li>
+                <li>Close-up</li>
+                <li>Compilation</li>
+                <li>3D</li>
+                <li>Erotica</li>
+                <li>Funny</li>
+                <li>Gonzo</li>
+                <li>Hentai</li>
+                <li>Homemade Interactive</li>
+                <li>POV</li>
+                <li>Pornstar</li>
+                <li>Production</li>
+                <li>Retro</li>
+                <li>Show</li>
+                <li>Softcore</li>
+                <li>Story</li>
+                <li>Uncensored</li>
+                <li>Vintage</li>
+              </ul>
+            </section>
+            <section class="category-group" aria-labelledby="themes-title">
+              <h3 id="themes-title">Themes</h3>
+              <ul class="category-list">
+                <li>Asian</li>
+                <li>American</li>
+                <li>BBW</li>
+                <li>Big Cock</li>
+                <li>Brunette</li>
+                <li>Lesbian</li>
+                <li>Mom</li>
+                <li>Nude</li>
+                <li>Old Granny</li>
+                <li>Small Tits</li>
+                <li>Threesome</li>
+              </ul>
+            </section>
+            <section class="category-group" aria-labelledby="actions-title">
+              <h3 id="actions-title">Actions</h3>
+              <ul class="category-list">
+                <li>69</li>
+                <li>Anal</li>
+                <li>Ass Licking</li>
+                <li>Ass to Mouth</li>
+                <li>Blowbang</li>
+                <li>Blowjob</li>
+                <li>Cowgirl</li>
+                <li>Creampie</li>
+                <li>Cum in Mouth</li>
+                <li>Cum on Feet</li>
+                <li>Cum on Tits</li>
+                <li>Cum Swallowing</li>
+                <li>Cumshot</li>
+                <li>Cumswap</li>
+                <li>Cunnilingus</li>
+                <li>Deep Throat</li>
+                <li>Dirty Talk</li>
+                <li>Doggy Style</li>
+                <li>Double Penetration</li>
+                <li>Dry Humping</li>
+                <li>Edging</li>
+                <li>Eating Pussy</li>
+                <li>Face Fuck</li>
+                <li>Face Sitting</li>
+                <li>Facial</li>
+                <li>Female Masturbation</li>
+                <li>Fingering</li>
+                <li>Fisting</li>
+                <li>Flashing</li>
+                <li>Footjob</li>
+                <li>Foreplay</li>
+                <li>Gaping</li>
+                <li>Handjob</li>
+                <li>Happy Ending</li>
+                <li>Humping</li>
+                <li>Kissing</li>
+                <li>Massage</li>
+                <li>Masturbation</li>
+                <li>Missionary</li>
+                <li>Moaning</li>
+                <li>Orgasm</li>
+                <li>Pegging</li>
+                <li>Prostate Massage</li>
+                <li>Riding</li>
+                <li>Rimjob</li>
+                <li>Scissoring</li>
+                <li>Screaming</li>
+                <li>Shaving</li>
+                <li>Squirting</li>
+                <li>Striptease</li>
+                <li>Titty Fucking</li>
+                <li>Twerking</li>
+              </ul>
+            </section>
+          </nav>
+        </aside>
+      </div>
+
+      <footer class="site-footer">
+        <p class="affiliate-disclosure">Affiliate disclosure: This page includes sponsored banners, an optional third-party cam feed, an optional sponsored player offer, and an optional GoLove.ai chat head. We may earn a commission if you visit or purchase through affiliate links, at no additional cost to you. VAST playback requires ad and video sources to be configured.</p>
+        <nav class="footer-sitemap" aria-label="Site map">
+          <h2>Site map</h2>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#featured-player">Player</a></li>
+            <li><a href="#partner-widget-title">Live cams</a></li>
+            <li><a href="#categories-title">Categories</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </nav>
+        <div class="footer-meta">
+          <span>Adults 18+ only</span>
+          <a href="#home" id="reopen-gate">Age confirmation</a>
+          <button class="footer-button" id="cookie-settings" type="button">Cookie settings</button>
+          <span>© <span id="year"></span> 0kbanana.com</span>
+        </div>
+      </footer>
+    </main>
+    <div class="age-denied" id="age-denied" role="status" tabindex="-1" hidden>
+      <p>This site is for adults only. Please close this page.</p>
+    </div>
+    <section class="consent-banner" id="consent-banner" aria-label="Privacy choices and settings" hidden>
+      <div class="consent-summary">
+        <p>We use essential cookies and optional analytics. To edit permissions, <button class="consent-settings-link" id="open-cookie-settings" type="button">click here</button>.</p>
+      </div>
+      <div class="consent-preferences" id="consent-preferences" hidden>
+        <h2 id="consent-title">Your privacy choices</h2>
+        <p>Essential browser storage remembers your choices. The banner image loads after age confirmation. Optional analytics, the sponsored cam feed, the player-sponsored offer, GoLove.ai chat head, and VAST player ads are separate choices. Each optional third-party feature loads only if you allow it.</p>
+        <p class="consent-status" id="consent-status" role="status" aria-live="polite"></p>
+        <div class="consent-actions">
+          <button class="button button-primary" id="allow-analytics" type="button">Allow analytics</button>
+          <button class="button button-quiet" id="reject-analytics" type="button">Reject analytics</button>
+          <button class="button button-primary" id="allow-cam-widget" type="button">Allow cam feed</button>
+          <button class="button button-quiet" id="reject-cam-widget" type="button">Reject cam feed</button>
+          <button class="button button-primary" id="allow-sponsored-popin" type="button">Allow player offer</button>
+          <button class="button button-quiet" id="reject-sponsored-popin" type="button">Reject player offer</button>
+          <button class="button button-primary" id="allow-chat-head" type="button">Allow GoLove.ai chat head</button>
+          <button class="button button-quiet" id="reject-chat-head" type="button">Reject chat head</button>
+          <button class="button button-primary" id="allow-vast-ads" type="button">Allow VAST player ads</button>
+          <button class="button button-quiet" id="reject-vast-ads" type="button">Reject VAST player ads</button>
+          <button class="button button-quiet" id="close-consent" type="button" hidden>Done</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
